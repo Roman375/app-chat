@@ -1,19 +1,18 @@
 import React from 'react'
-import { Input } from 'antd';
-import './styles/index.scss';
+import './styles/index.scss'
+import { Auth } from './pages'
 
 class App extends React.Component {
-  render(){
-  return (
-    <div className="wrapper">
-      <Input.Search
-      placeholder="input search text"
-      allowClear
-      style={{ width: 200, margin: '0 10px' }}
-    />
-    </div>
-  );
-}
+  render() {
+    return (
+      <div className="wrapper">
+        <Route
+          path="/"
+          render={() => (isAuth ? <Home /> : <Redirect to="/signin" />)}
+        />
+      </div>
+    )
+  }
 }
 
-export default App;
+export default App
