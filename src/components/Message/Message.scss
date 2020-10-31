@@ -1,0 +1,82 @@
+.message {
+    // $self: &;
+    // max-height: 500px;
+  
+    // &__content {
+    //   display: flex;
+    //   max-width: 550px;
+    //   margin-bottom: 20px;
+    //   position: relative;
+    //   max-height: 120px;
+      
+    // }
+  
+    &__avatar {
+      display: flex;
+      flex-direction: column-reverse;
+      img {
+        border-radius: 50px;
+        width: 50px;
+        height: 50px;
+        margin-right: 13px;
+        margin-left: 10px;
+        margin-bottom: 30px;
+      }
+    }
+  
+    // &__bubble {
+    //   background-color: rgb(132, 133, 132);
+    //   border-radius: 40px;
+    //   margin-bottom: 8px;
+    // }
+  
+    // &__date {
+    //   display: flex;
+    //   font-size: 12px;
+    //   opacity: 0.5px;
+    // }
+  
+    // &__text {
+    //   padding: 15px;
+    //   font-size: 1rem;
+    //   color: white;
+    // }
+  
+    // &--isme {
+    //   display: flex;
+    //   flex-direction: row-reverse;
+  
+    //   #{$self}__content {
+    //     flex-direction: row-reverse;
+    //   }
+  
+    //   #{$self}__avatar {
+    //     // display: flex;
+    //     // flex-direction: column-reverse;
+    //     img {
+    //       border-radius: 50px;
+    //       width: 50px;
+    //       height: 50px;
+    //       margin-right: 13px;
+    //       margin-left: 10px;
+    //       margin-bottom: 30px;
+    //     }
+    //   }
+  
+    //   #{$self}__bubble {
+    //     background: #e4e4e4;
+    //     border-radius: 50px;
+    //     order: 2;
+    //     #{$self}__text {
+    //       color: black;
+    //     }
+    //   }
+  
+    //   #{$self}__date {
+    //     display: flex;
+    //     flex-direction: row-reverse;
+    //     font-size: 12px;
+    //     opacity: 0.5px;
+    //   }
+    // }
+  }
