@@ -18,7 +18,7 @@ const Message = ({ avatar, user, text, date, isMe }) => {
         </div>
         <div className="message__info">
           <div className="message__bubble">
-            {text && <p className="message__text">{text}</p>}
+            {text && <span className="message__text">{text}</span>}
           </div>
           {date && <span className="message__date">
             <Time date={date} />

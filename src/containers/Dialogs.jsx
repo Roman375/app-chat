@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { Dialogs as BaseDialogs, Search } from 'components'
+import './Dialogs.scss'
 
 const Dialogs = ({ items, userId }) => {
   const [inputValue, setValue] = useState('')
@@ -18,7 +19,7 @@ const Dialogs = ({ items, userId }) => {
     <>
       <Search onSearch={onChangeInput}
         inputValue={inputValue} />
-      <h1>Chats</h1>
+      <h1 className="title">Chats</h1>
       <BaseDialogs
         userId={userId}
         items={filtred}

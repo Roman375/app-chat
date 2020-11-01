@@ -5,7 +5,8 @@ import { Message } from 'components'
  
 
 const Messages = ({items}) => {
-    return items ? (
+    // return  items ?
+    return(
         <div>
             <Message
               avatar="https://thumbs.dreamstime.com/b/male-avatar-icon-flat-style-male-user-icon-cartoon-man-avatar-vector-stock-91602735.jpg"
@@ -33,7 +34,8 @@ const Messages = ({items}) => {
             />
         </div>
 
-    ) : <Empty />
+    )
+    //  : <Empty />
 }
 
 export default Messages

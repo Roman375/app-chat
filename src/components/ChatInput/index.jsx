@@ -7,7 +7,7 @@ const ChatInput = () => {
   return (
     <>
       <div className="chat-input">
-        <Input size="large" placeholder="Type your message" />
+        <input size="large" placeholder="Type your message" />
         <div className="chat-input__actions">
           <button>
         <SendOutlined />
