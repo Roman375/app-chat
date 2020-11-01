@@ -1,12 +1,12 @@
 .chat {
   display: flex;
   max-width: 1200px;
-  height: 720px;
+  height: 600px;
   max-height: 720px;
   margin: 10px auto;
 
   &__sidebar {
-    height: 101%;
+    height: 100%;
     background-color: rgb(233, 233, 233);
     width: 500px;
     border-right: 1px solid rgb(216, 216, 216);
@@ -49,7 +49,7 @@
     }
 
     &-dialogs {
-      height: 636px;
+      height: calc(100% - 90px);
       padding-top: 30px;
       margin: auto;
       background-color: white;
@@ -99,7 +99,7 @@
     &-message {
       background-color: rgb(244, 244, 244);
       overflow: auto;
-      height: calc(100% - 171px);
+      height: calc(100% - 178px);
     }
 
     &-input {

@@ -7,8 +7,8 @@ import { Input, Empty } from 'antd'
 const Dialogs = ({ items, userId, onSearch, inputValue }) => {
   return (
     <div className="dialogs">
-      <Search onSearch={onSearch} inputValue={inputValue}/>
-      <h1 className="dialogs-title">Chats</h1>
+      {/* <Search onSearch={onSearch} inputValue={inputValue}/> */}
+      {/* <h1 className="dialogs-title">Chats</h1> */}
       <div className='dialogs-item'>
       {items.length ? (
         orderBy(items, ['created_at'], ['desc']).map((item) => (
