@@ -1,3 +1,1 @@
-import RegisterForm from "./containers/RegisterForm";
-
-export default RegisterForm;
+export { default as LoginForm } from './LoginForm'

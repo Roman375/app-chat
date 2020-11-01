@@ -1,0 +1,26 @@
+.search {
+    padding: 10px;
+    margin-top: 30px;
+    .ant-input-group > .ant-input:first-child,
+    .ant-input-group-addon:first-child {
+      border-radius: 30px;
+    }
+    .ant-input-search > .ant-input-group > .ant-input-group-addon {
+      border-radius: 30px;
+    }
+    .ant-input-search
+      > .ant-input-group
+      > .ant-input-group-addon
+      .ant-input-search-button {
+      border-radius: 30px;
+    }
+    .ant-btn-primary {
+      background-color: white;
+      border-color: white;
+      color: black;
+      .ant-input-search > .ant-input-group > .ant-input-group-addon {
+        border-radius: 30px;
+      }
+    }
+  }
+    

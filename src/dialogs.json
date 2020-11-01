@@ -1,0 +1,66 @@
+[
+    {
+      "_id":0.028713429657878597,
+      "text":"Message is defined but never used",
+      "created_at":"Sun Nov 01 2020 14:10:34",
+      "user":{
+        "_id":1,
+        "fullname":"Roman Roman",
+        "avatar":"https://thumbs.dreamstime.com/b/male-avatar-icon-flat-style-male-user-icon-cartoon-man-avatar-vector-stock-91602735.jpg",
+        "isOnline":true
+      }
+    },
+    {
+      "_id":0.3789421506544566,
+      "text":"Message is defined but never used",
+      "created_at":"Sun Nov 01 2020 14:20:40",
+      "user":{
+        "_id":1,
+        "fullname":"Nazar Roman",
+        "avatar":"https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQC-uZ1jb4eKQQ9zVkOf3qiZt_ocUMtxEGTgA&usqp=CAU"
+      }
+    },
+    {
+      "_id":0.5056642178253679,
+      "text":"Message is defined but never used",
+      "created_at":"Sun Nov 01 2020 14:20:34",
+      "user":{
+        "_id":1,
+        "fullname":"Roman ",
+        "avatar":"https://thumbs.dreamstime.com/b/male-avatar-icon-flat-style-male-user-icon-cartoon-man-avatar-vector-stock-91602735.jpg",
+        "isOnline":true
+      }
+    },
+    {
+      "_id":0.05947910961386316,
+      "text":"Message is defined but never used",
+      "created_at":"Sun Nov 01 2020 14:20:40",
+      "user":{
+        "_id":1,
+        "fullname":"Nazar Roman",
+        "avatar":"https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQC-uZ1jb4eKQQ9zVkOf3qiZt_ocUMtxEGTgA&usqp=CAU"
+      }
+    },
+    {
+      "_id":0.45105743277424026,
+      "text":"Message is defined but never used",
+      "created_at":"Sun Nov 01 2020 14:20:34",
+      "user":{
+        "_id":1,
+        "fullname":"Roman ",
+        "avatar":"https://thumbs.dreamstime.com/b/male-avatar-icon-flat-style-male-user-icon-cartoon-man-avatar-vector-stock-91602735.jpg",
+        "isOnline":true
+      }
+    },
+    {
+      "_id":0.8929004188819019,
+      "text":"Message is defined but never used",
+      "created_at":"Sun Nov 01 2020 14:20:34",
+      "user":{
+        "_id":1,
+        "fullname":"Roman ",
+        "avatar":"https://thumbs.dreamstime.com/b/male-avatar-icon-flat-style-male-user-icon-cartoon-man-avatar-vector-stock-91602735.jpg",
+        "isOnline":true
+      }
+    }
+  ]

@@ -1,39 +1,79 @@
 import React from 'react'
 import './Home.scss'
-import { Message, DialogItem } from 'components'
+import { Messages, ChatInput, Search } from 'components'
+import { Dialogs } from 'containers'
+
+import dialogsJson from 'dialogs.json'
+
 
 const Home = ({ avatar, user }) => {
+  const onSearch = (value) => console.log(value)
   return (
     <section className="home">
-        <DialogItem 
-        user= {{
-          fullname: 'Roman Roman',
-          avatar: null,
-          isOnline: true
-        }}/>
-        <DialogItem 
-        user= {{
-          fullname: 'Roman Roman',
-          avatar: null,
-          isOnline: true
-        }}/>
-        <DialogItem 
-        user= {{
-          fullname: 'Roman Roman',
-          avatar: null,
-          isOnline: true
-        }}/>
-      
+      <div className="chat">
+        <div className="chat__sidebar">
+          <div className="chat__sidebar-header chat__sidebar-header--online">
+            <div className="chat__sidebar-header-avatar">
+              <img src="https://thumbs.dreamstime.com/b/male-avatar-icon-flat-style-male-user-icon-cartoon-man-avatar-vector-stock-91602735.jpg" />
+            </div>
+          </div>
+            
+          <div className="chat__sidebar-dialogs">
+            <Dialogs 
+            items={dialogsJson}
+            />
+            
+          </div>
+        </div>
+        <div className="chat__dialog">
+          <div className="chat__dialog-header chat__dialog-header--online">
+            <div className="chat__dialog-header-avatar">
+              <img src="https://thumbs.dreamstime.com/b/male-avatar-icon-flat-style-male-user-icon-cartoon-man-avatar-vector-stock-91602735.jpg" />
+            </div>
+            <b className="chat__dialog-header-fullname">Roman</b>
+          </div>
+          <div className="chat__dialog-message">
+            <Messages />
+          </div>
+          <div className="chat__dialog-input">
+            <ChatInput />
+          </div>
+        </div>
+      </div>
+
       {/* <Dialogs
         items={[
           {
-            users: {
-              fullname: 'Roman Roman',
-              avatar: null,
-            },
-            message: {
-              text: 'Message is defined but never used',
-            },
+            _id: Math.random(),
+            text: 'Message is defined but never used',
+              created_at: 'Sun Nov 01 2020 14:10:34',
+              user: {
+                _id: 1,
+                fullname: 'Roman Roman',
+                avatar: "https://thumbs.dreamstime.com/b/male-avatar-icon-flat-style-male-user-icon-cartoon-man-avatar-vector-stock-91602735.jpg",
+                isOnline: true
+              },
+          },
+          {
+            _id: Math.random(),
+            text: 'Message is defined but never used',
+              created_at: 'Sun Nov 01 2020 14:20:40',
+              user: {
+                _id: 1,
+                fullname: 'Nazar Roman',
+                avatar: "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQC-uZ1jb4eKQQ9zVkOf3qiZt_ocUMtxEGTgA&usqp=CAU",
+              },
+          },
+          {
+            _id: Math.random(),
+            text: 'Message is defined but never used',
+              created_at: 'Sun Nov 01 2020 14:20:34',
+              user: {
+                _id: 1,
+                fullname: 'Roman ',
+                avatar: "https://thumbs.dreamstime.com/b/male-avatar-icon-flat-style-male-user-icon-cartoon-man-avatar-vector-stock-91602735.jpg",
+                isOnline: true
+              },
           },
         ]}
       /> */}

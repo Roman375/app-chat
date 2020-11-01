@@ -1,0 +1,27 @@
+.chat-input {
+  display: flex;
+  position: relative;
+  border-radius: 25px;
+  background-color: rgb(252, 252, 252);
+
+  input {
+    padding: 20px;
+    border-radius: 25px;
+  }
+
+  &__actions {
+    display: flex;
+    align-items: center;
+    left: 100px;
+    cursor: pointer;
+    margin-left: -55px;
+    opacity: 0.5;
+     &:hover > span{
+        cursor: pointer;
+         opacity: 1;
+     }
+    & > button {
+      all: unset;
+    }
+  }
+}
