@@ -1,12 +1,11 @@
 import React from 'react'
 import './Home.scss'
-import { Messages, ChatInput, Search } from 'components'
+import { Message, ChatInput, Search } from 'components'
 import { Dialogs } from 'containers'
 
 import dialogsJson from 'dialogs.json'
 
-
-const Home = ({ avatar, user }) => {
+const Home = ({isMe, todos, onToggle, onAdd, Add, hello }) => {
   const onSearch = (value) => console.log(value)
   return (
     <section className="home">
@@ -17,12 +16,9 @@ const Home = ({ avatar, user }) => {
               <img src="https://thumbs.dreamstime.com/b/male-avatar-icon-flat-style-male-user-icon-cartoon-man-avatar-vector-stock-91602735.jpg" />
             </div>
           </div>
-            
+
           <div className="chat__sidebar-dialogs">
-            <Dialogs 
-            items={dialogsJson}
-            />
-            
+            <Dialogs items={dialogsJson} />
           </div>
         </div>
         <div className="chat__dialog">
@@ -33,10 +29,17 @@ const Home = ({ avatar, user }) => {
             <b className="chat__dialog-header-fullname">Roman</b>
           </div>
           <div className="chat__dialog-message">
-            <Messages />
+            <Message
+              todos={todos}
+              hello={hello}
+              onToggle={onToggle}
+              isMe={isMe}
+              avatar="https://thumbs.dreamstime.com/b/male-avatar-icon-flat-style-male-user-icon-cartoon-man-avatar-vector-stock-91602735.jpg"
+            />
           </div>
           <div className="chat__dialog-input">
-            <ChatInput />
+            <ChatInput onAdd={onAdd}
+            Add={Add} />
           </div>
         </div>
       </div>

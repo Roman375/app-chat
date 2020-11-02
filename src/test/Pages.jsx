@@ -26,9 +26,9 @@ export const Pages = () => {
   const toggleHandler = (id) => {
     setTodos((prev) =>
       prev.map((todo) => {
-        if (todo.id === id) {
-          todo.completed = !todo.completed
-        }
+        // if (todo.id === id) {
+        //   todo.completed = !todo.completed
+        // }
         return todo
       })
     )

@@ -16,23 +16,8 @@ export const TodoList = ({ todos, isMe, avatar, onToggle }) => {
         //   classes.push('completed')
         // }
         return (
-          <li key={todo.id}>
-            {/* <label>
-              <input
-                type="checkbox"
-                checked={todo.completed}
-                onChange={onToggle.bind(null, todo.id)}
-              />
-              <span>{todo.title}</span>
-              <i
-                className="material-icons red-text"
-                onClick={() => alert('a')}
-              >
-                delete
-              </i>
-            </label> */}
-
-            <div
+          
+            <div key={todo.id}
               className={classNames('message', {
                 'message--isme': isMe,
               })}
@@ -53,7 +38,6 @@ export const TodoList = ({ todos, isMe, avatar, onToggle }) => {
                 </div>
               </div>
             </div>
-          </li>
         )
       })}
     </ul>

@@ -4,14 +4,15 @@ import { Auth } from './pages'
 import { Route } from 'react-router-dom'
 import { Home } from 'pages'
 import { Pages } from './test/Pages'
+import HomeCont from './HomeCont'
 
 class App extends React.Component {
   render() {
     return (
       <div className="wrapper">
         {/* <Auth /> */}
-        {/* <Route exact path='/ms' component={Home} /> */}
-        <Pages />
+        <Route exact path='/ms' component={HomeCont} />
+        {/* <Pages /> */}
       </div>
     )
   }
