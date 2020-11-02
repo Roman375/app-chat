@@ -1,48 +1,57 @@
-import React, {useRef} from 'react'
-import { Input } from 'antd'
+import React, { useRef, useState } from 'react'
+import { Input, message } from 'antd'
 import { SendOutlined } from '@ant-design/icons'
 import './ChatInput.scss'
+import axios from 'axios';
 
 const ChatInput = (props) => {
-  debugger
   const ref = useRef(null)
 
   const keyPressHandler = (event) => {
-    // if (event.key === 'Enter') {
-      // setTimeout(() => {
-        props.onAdd(ref.current.value)
-        ref.current.value = ''
-      // }, 3000);
-     
-      // setTitle('')
-    // }
+ 
+    props.onAdd(ref.current.value)
+    ref.current.value = ''
   }
 
   const keyPress = (event) => {
-    // if (event.key === 'Enter') {
-      // setTimeout(() => {
-        props.Add(ref.current.value)
-        ref.current.value = ''
-      // }, 3000);
-     
-      // setTitle('')
-    // }
+    props.onAdd(ref.current.value)
+    ref.current.value = ''
   }
+
+ let value = fetch('https://api.chucknorris.io/jokes/random')
+  .then((r) => r.json()
+ .then((res) => ({ data: res})))
+  .then((res) => console.log(res.data.value))
+  
+
+
+  
+
+console.log(value)
 
   return (
     <>
       <div className="chat-input">
-        <input 
-        ref={ref}
-        id="title"
-        type="text"
-        size="large" placeholder="Type your message" />
+        <input
+          ref={ref}
+          id="title"
+          type="text"
+          size="large"
+          placeholder="Type your message"
+        />
         <div className="chat-input__actions">
           <button>
-        <SendOutlined onClick={()=>{
-          keyPressHandler()
-          keyPress()}} />
-        </button>
+            <SendOutlined
+              onClick={() => {
+                keyPressHandler()
+                setTimeout(() => {
+                  keyPress(
+                    ref.current.value = value
+                  )
+                }, 2000)
+              }}
+            />
+          </button>
         </div>
       </div>
     </>

@@ -3,16 +3,15 @@ import './styles/index.scss'
 import { Auth } from './pages'
 import { Route } from 'react-router-dom'
 import { Home } from 'pages'
-import { Pages } from './test/Pages'
-import HomeCont from './HomeCont'
+import HomeContainer from './HomeContainer'
 
 class App extends React.Component {
   render() {
     return (
       <div className="wrapper">
         {/* <Auth /> */}
-        <Route exact path='/ms' component={HomeCont} />
-        {/* <Pages /> */}
+        <Route exact path='/ms' component={HomeContainer} />
+        {/* <div>{fetch("https://api.chucknorris.io/jokes/random").then(r =>  r.json().then(data => ({status: r.status, data: data}))).then(data => console.log(data.data.value))}</div> */}
       </div>
     )
   }

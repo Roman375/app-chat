@@ -4,17 +4,18 @@ import './Message.scss'
 import formatDistance from 'date-fns/formatDistance'
 import classNames from 'classnames'
 import { Time } from 'components'
+import { Empty } from 'antd'
 
-const Message = ({ todos, onToggle, avatar, user, text, date, isMe, hello }) => {
+const Message = ({ messages, onToggle, avatar, user, text, date, isMe, answers }) => {
   return (
+    
     <ul>
-      {todos.map((todo) => {
-        if (todo.isMe === true) {
-          return (
+      {messages.map((message) => {
+          return(
             <div
-              key={todo.id}
+              key={message.id}
               className={classNames('message', {
-                'message--isme': todo.isMe,
+                'message--isme': message.isMe,
               })}
             >
               <div className="message__content">
@@ -23,7 +24,7 @@ const Message = ({ todos, onToggle, avatar, user, text, date, isMe, hello }) => 
                 </div>
                 <div className="message__info">
                   <div className="message__bubble">
-                    <span className="message__text">{todo.title}</span>
+                    <span className="message__text">{message.title}</span>
                   </div>
                   {date && (
                     <span className="message__date">
@@ -34,28 +35,10 @@ const Message = ({ todos, onToggle, avatar, user, text, date, isMe, hello }) => 
               </div>
             </div>
           ) 
-        }
       })}
     </ul>
   )
 }
-{/* <div key={todo.id} className="messagemessage--isme">
-  <div className="message__content">
-    <div className="message__avatar">
-      <img src={avatar} />
-    </div>
-    <div className="message__info">
-      <div className="message__bubble">
-        <span className="message__text">{todo.title}</span>
-      </div>
-      {date && (
-        <span className="message__date">
-          <Time date={date} />
-        </span>
-      )}
-    </div>
-  </div>
-</div> */}
 
 Message.propTypes = {
   avatar: PropTypes.string,
