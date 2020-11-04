@@ -10,6 +10,7 @@ class App extends React.Component {
     return (
       <div className="wrapper">
         <Route exact path='/' component={HomeContainer} />
+        <h1>Hello</h1>
       </div>
     )
   }
