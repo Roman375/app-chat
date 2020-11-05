@@ -5,7 +5,7 @@ import { Dialogs } from 'containers'
 
 import dialogsJson from 'dialogs.json'
 
-const Home = ({isMe, messages, onToggle, onAdd, Add, answers }) => {
+const Home = ({ messages, onToggle, onAdd, Add, answers }) => {
   const onSearch = (value) => console.log(value)
   return (
     <section className="home">
@@ -33,7 +33,7 @@ const Home = ({isMe, messages, onToggle, onAdd, Add, answers }) => {
               messages={messages}
               answers={answers}
               onToggle={onToggle}
-              isMe={isMe}
+              // isMe={isMe}
               avatar="https://thumbs.dreamstime.com/b/male-avatar-icon-flat-style-male-user-icon-cartoon-man-avatar-vector-stock-91602735.jpg"
             />
           </div>

@@ -22,6 +22,14 @@ const HomeCont = () => {
     }
     setMessages((prev) => [...prev, newMessage])
   }
+  const keyPress = (title) => {
+    const newMessage = {
+      title: title,
+      id: Date.now(),
+      isMe: false,
+    }
+    setMessages((prev) => [...prev, newMessage])
+  }
   
 
   
@@ -30,6 +38,7 @@ const HomeCont = () => {
       <Home
         messages={messages}
         onAdd={addHandler}
+        Add={keyPress}
       />
     </>
   )

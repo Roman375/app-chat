@@ -9,8 +9,9 @@ class App extends React.Component {
   render() {
     return (
       <div className="wrapper">
-        <Route exact path='/' component={HomeContainer} />
-        <h1>Hello</h1>
+        {/* <Route exact path='/s' component={HomeContainer} /> */}
+        <HomeContainer />
+        {/* <h1>Hello</h1> */}
       </div>
     )
   }
