@@ -70,68 +70,44 @@
     {
       "_id": "5fa42a9ca507eeb1ccb4761b",
       "text": "Proident deserunt minim cupidatat adipisicing magna laboris reprehenderit ea sit magna commodo elit in nulla. Adipisicing aliqua sint Lorem ea. Ad duis non consectetur qui in.",
-      "created_at": "Mon Aug 20 2012 13:10:27 GMT+0000 (UTC)",
-      "user": {
-        "_id": "5fa42a9c4b322bacdb3bc7a2",
-        "fullname": "Love",
-        "avater": null
-      },
+      "avatar": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSc4WC8kAXLPTRQhWyQYET5-0mcOWU6Qzuphg&usqp=CAU",
+      "date": "Mon Aug 20 2012 13:10:27 GMT+0000 (UTC)",
       "dialog":"0.028713429657878597"
     },
     {
       "_id": "5fa42a9c5f767d9f9f83e3a9",
       "text": "Pariatur nulla minim incididunt anim amet fugiat non. Esse sunt excepteur minim cillum cillum non enim. Deserunt consequat deserunt esse ullamco voluptate est consectetur culpa.",
-      "created_at": "Wed May 07 1986 12:10:22 GMT+0000 (UTC)",
-      "user": {
-        "_id": "5fa42a9cdaa0e9c4dcbc9cc0",
-        "fullname": "Barnes",
-        "avater": null
-      },
-      "dialog":"0.028713429657878597"
+      "avatar": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQk-COFuVx_inM-im5zPvCrssE7CYqholjxBw&usqp=CAU",
+      "date": "Mon Aug 20 2012 13:10:27 GMT+0000 (UTC)",
+      "dialog":"0.3789421506544566"
     },
     {
       "_id": "5fa42a9cf6e874d17bf6bf73",
       "text": "Incididunt minim id dolore esse est cupidatat reprehenderit exercitation reprehenderit esse fugiat. Proident mollit veniam qui tempor commodo eu esse incididunt consequat quis culpa. Irure officia enim officia ea nulla mollit.",
-      "created_at": "Tue Mar 01 2011 07:03:24 GMT+0000 (UTC)",
-      "user": {
-        "_id": "5fa42a9c92e4f43891750938",
-        "fullname": "Maynard",
-        "avater": null
-      },
-      "dialog":"0.028713429657878597"
+      "avatar": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTuoaC-QBBFgMTXhL8ATmQO7mKT0DLBE_tqaA&usqp=CAU",
+      "date": "Mon Aug 20 2012 13:10:27 GMT+0000 (UTC)",
+      "dialog":"0.5056642178253679"
     },
     {
       "_id": "5fa42a9c7c3875207777135b",
       "text": "Qui laborum adipisicing esse proident Lorem nulla incididunt laboris laboris. Proident in non magna cillum eiusmod et velit in non magna. Non reprehenderit ullamco id sit aliquip commodo consequat aute est elit exercitation.",
-      "created_at": "Thu Feb 25 1999 14:49:46 GMT+0000 (UTC)",
-      "user": {
-        "_id": "5fa42a9c110cc9d060e14ae5",
-        "fullname": "Nguyen",
-        "avater": null
-      },
-      "dialog":"0.028713429657878597"
+      "avatar": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQk-COFuVx_inM-im5zPvCrssE7CYqholjxBw&usqp=CAU",
+      "date": "Mon Aug 20 2012 13:10:27 GMT+0000 (UTC)",
+      "dialog":"0.05947910961386316"
     },
     {
       "_id": "5fa42a9cb0f97d56f3550b60",
       "text": "Amet veniam commodo proident exercitation sit velit magna anim nisi consectetur aliquip laborum. Adipisicing aute adipisicing enim enim excepteur aliquip anim excepteur. Incididunt magna cillum anim consectetur esse commodo.",
-      "created_at": "Wed May 26 1971 23:35:22 GMT+0000 (UTC)",
-      "user": {
-        "_id": "5fa42a9c0e8001962f6c8ed6",
-        "fullname": "Ewing",
-        "avater": null
-      },
-      "dialog":"0.028713429657878597"
+      "avatar": "https://thumbs.dreamstime.com/b/male-avatar-icon-flat-style-male-user-icon-cartoon-man-avatar-vector-stock-91602735.jpg",
+      "date": "Mon Aug 20 2012 13:10:27 GMT+0000 (UTC)",
+      "dialog":"0.45105743277424026"
     },
     {
       "_id": "5fa42a9c50029867392d2d2a",
       "text": "Nulla irure deserunt deserunt voluptate labore consectetur quis magna enim adipisicing quis. Duis incididunt aliqua minim velit ullamco proident nostrud labore sint. Aliquip sint consectetur proident do consequat ipsum aliqua mollit.",
-      "created_at": "Sun Oct 13 2002 04:58:17 GMT+0000 (UTC)",
-      "user": {
-        "_id": "5fa42a9c2166d1c0cb08b51d",
-        "fullname": "{{firstName()} Melton",
-        "avater": null
-      },
-      "dialog":"0.028713429657878597"
+      "avatar": "https://thumbs.dreamstime.com/z/male-avatar-icon-flat-style-male-user-icon-cartoon-man-avatar-hipster-vector-stock-91463024.jpg",
+      "date": "Mon Aug 20 2012 13:10:27 GMT+0000 (UTC)",
+      "dialog":"0.8929004188819019"
     }
   ]
 }

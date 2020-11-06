@@ -6,7 +6,7 @@ import classNames from 'classnames'
 import { Time } from 'components'
 import { Empty } from 'antd'
 
-const Message = ({ messages, onToggle, avatar, user, text, date, isMe, answers }) => {
+const Message = ({  avatar, text, date, isMe }) => {
   return (
     
             <div

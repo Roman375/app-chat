@@ -21,7 +21,7 @@ const Home = ({ messages, onToggle, onAdd, Add, answers }) => {
 
           <div className="chat__sidebar-dialogs">
             <Dialogs 
-            items={dialogsJson} 
+            // items={dialogsJson} 
             />
           </div>
         </div>
@@ -34,18 +34,21 @@ const Home = ({ messages, onToggle, onAdd, Add, answers }) => {
           </div>
           <div className="chat__dialog-message" id='wrapp'>
 
-            {/* <Messages 
-            avatar="https://thumbs.dreamstime.com/b/male-avatar-icon-flat-style-male-user-icon-cartoon-man-avatar-vector-stock-91602735.jpg"/> */}
+            <Messages 
+           messages={messages}
+           answers={answers}
+           avatar="https://thumbs.dreamstime.com/b/male-avatar-icon-flat-style-male-user-icon-cartoon-man-avatar-vector-stock-91602735.jpg"
+           />
             
-            <Messages2
+            {/* <Messages2
               
-            />
-            <Message
+            /> */}
+            {/* <Message
               messages={messages}
               answers={answers}
               onToggle={onToggle}
               avatar="https://thumbs.dreamstime.com/b/male-avatar-icon-flat-style-male-user-icon-cartoon-man-avatar-vector-stock-91602735.jpg"
-            />
+            /> */}
             
           </div>
           <div className="chat__dialog-input">

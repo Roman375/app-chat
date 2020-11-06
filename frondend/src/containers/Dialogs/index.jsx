@@ -19,13 +19,13 @@ const Dialogs = ({ fetchDialogs, setCurrentDialog, items, userId }) => {
     setValue(value)
   }
 
-  // useEffect(() => {
-  //   if (!items.length) {
-  //     fetchDialogs()
-  //   } else {
-  //     setFiltredItems(items)
-  //   }
-  // }, [items])
+  useEffect(() => {
+    if (!items.length) {
+      fetchDialogs()
+    } else {
+      setFiltredItems(items)
+    }
+  }, [items])
 
   return (
     <>
@@ -36,13 +36,10 @@ const Dialogs = ({ fetchDialogs, setCurrentDialog, items, userId }) => {
         items={filtred}
         onSearch={onChangeInput}
         inputValue={inputValue}
-        // setCurrentDialog={setCurrentDialog}
+        setCurrentDialog={setCurrentDialog}
       />
     </>
   )
 }
 
-export default
-//  connect(({ dialogs }) => dialogs, dialogsActions)(
-  Dialogs
-  // )
+export default connect(({ dialogs }) => dialogs, dialogsActions)(Dialogs)

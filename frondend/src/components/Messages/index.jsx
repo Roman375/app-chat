@@ -1,19 +1,20 @@
 import React from 'react'
-import Message from '../Message/index2'
+import Message2 from '../Message/index2'
+import { Message } from 'components'
 import { Empty } from 'antd'
 
-const Messages = ({ items, messages, onAdd , Add}) => {
+const Messages = ({ items, messages, answers, avatar }) => {
   debugger
-  return  (
+  return items ? (
     <div>
       {items.map((item) => (
-        <Message
-              {...item}
-               />
-      ))} 
+        <Message2 {...item} />
+      ))}
+      <Message messages={messages} answers={answers} avatar={avatar} />
     </div>
-  
-  ) 
+  ) : (
+    <Empty />
+  )
 }
 
 export default Messages
