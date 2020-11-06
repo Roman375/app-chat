@@ -7,8 +7,6 @@ import { Time } from 'components'
 import { Empty } from 'antd'
 
 const Message = ({ messages, onToggle, avatar, user, text, date, isMe, answers }) => {
-  debugger
-  console.log(messages)
   return (
     
             <div

@@ -20,7 +20,7 @@ const DialogItem = ({_id, user, date, isMe, created_at, text, setCurrentDialog }
         className={classNames('dialogs__item', {
           'dialogs__item--online': user.isOnline,
         })}
-        onClick={setCurrentDialog.bind(this, _id)}
+        // onClick={setCurrentDialog.bind(this, _id)}
       >
         <div className="dialogs__item-avatar">
           <img src={user.avatar}></img>

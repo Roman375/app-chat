@@ -19,6 +19,7 @@ const HomeCont = () => {
       title: title,
       id: Date.now(),
       isMe: true,
+      date:new Date()
     }
     setMessages((prev) => [...prev, newMessage])
   }
@@ -27,6 +28,7 @@ const HomeCont = () => {
       title: title,
       id: Date.now(),
       isMe: false,
+      date: new Date()
     }
     setMessages((prev) => [...prev, newMessage])
   }

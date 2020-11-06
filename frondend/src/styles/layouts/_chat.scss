@@ -98,7 +98,8 @@
 
     &-message {
       background-color: rgb(244, 244, 244);
-      overflow: auto;
+      overflow: hidden;
+      overflow-y:scroll;
       height: calc(100% - 173px);
     }
 

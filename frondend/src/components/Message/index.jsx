@@ -9,7 +9,7 @@ import { Empty } from 'antd'
 const Message = ({ messages, onToggle, avatar, user, text, date, isMe, answers }) => {
   debugger
   return (
-    <ul>
+    <ul className='list'>
       {messages.map((message) => {
           return(
             <div
@@ -26,9 +26,9 @@ const Message = ({ messages, onToggle, avatar, user, text, date, isMe, answers }
                   <div className="message__bubble">
                     <span className="message__text">{message.title}</span>
                   </div>
-                  {date && (
+                  {message.date && (
                     <span className="message__date">
-                      <Time date={date} />
+                      <Time date={message.date} />
                     </span>
                   )}
                 </div>
