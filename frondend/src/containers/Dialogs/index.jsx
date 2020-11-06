@@ -25,7 +25,7 @@ const Dialogs = ({ fetchDialogs, setCurrentDialog, items, userId }) => {
     } else {
       setFiltredItems(items)
     }
-  }, [])
+  }, [items])
 
   return (
     <>

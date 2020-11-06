@@ -1,9 +1,9 @@
 import React from 'react'
 import './Home.scss'
-import { Message, ChatInput, Search } from 'components'
-import { Dialogs } from 'containers'
+import { Message, ChatInput } from 'components'
+import { Dialogs, Messages } from 'containers'
 
-// import dialogsJson from 'dialogs.json'
+import dialogsJson from 'dialogs.json'
 
 const Home = ({ messages, onToggle, onAdd, Add, answers }) => {
   return (
@@ -30,6 +30,8 @@ const Home = ({ messages, onToggle, onAdd, Add, answers }) => {
             <b className="chat__dialog-header-fullname">Roman</b>
           </div>
           <div className="chat__dialog-message">
+            {/* <Messages 
+            avatar="https://thumbs.dreamstime.com/b/male-avatar-icon-flat-style-male-user-icon-cartoon-man-avatar-vector-stock-91602735.jpg"/> */}
             <Message
               messages={messages}
               answers={answers}

@@ -10,13 +10,10 @@ const Message = ({ messages, onToggle, avatar, user, text, date, isMe, answers }
   debugger
   console.log(messages)
   return (
-    <ul>
-      {messages.map((message) => {
-          return(
+    
             <div
-              key={message.id}
               className={classNames('message', {
-                'message--isme': message.isMe,
+                'message--isme': isMe,
               })}
             >
               <div className="message__content">
@@ -25,7 +22,7 @@ const Message = ({ messages, onToggle, avatar, user, text, date, isMe, answers }
                 </div>
                 <div className="message__info">
                   <div className="message__bubble">
-                    <span className="message__text">{message.title}</span>
+                    <span className="message__text">{text}</span>
                   </div>
                   {date && (
                     <span className="message__date">
@@ -35,9 +32,7 @@ const Message = ({ messages, onToggle, avatar, user, text, date, isMe, answers }
                 </div>
               </div>
             </div>
-          ) 
-      })}
-    </ul>
+  
   )
 }
 
